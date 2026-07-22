@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> portfolio</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="bootstrap.bundle.min.js"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            line-height: 1.6;
+            color: #865656;
+            background-color: #181717;
+        }
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+        }
+        header {
+            background: #a459da;
+            color: #fff;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .logo {
+            display: inline-block;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        nav {
+            float: right;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .nav-links a:hover {
+            color: #00bcd4;
+        }
+        .homes {
+            color: rgb(109, 146, 180);
+            margin-top: 140px;
+            margin-left: 60px;
+            font-size: large;
+        }
+        #image {
+
+            position: absolute;
+            bottom: 0%;
+            right: 80px;
+            top: 130px;
+        }
+        #about {
+            color: aliceblue;
+            margin-top: 200px;
+            position: relative;
+            font-size: larger;
+            padding: auto;
+            margin: 30px;
+        }
+        h3 {
+            margin: 20px;
+            padding: 10px;
+        }
+        .skill {
+
+            color: aliceblue;
+            border-radius: 0px;
+            margin: 40px;
+
+        }
+        .btn {
+
+            background-color: rgb(113, 173, 197);
+            color: aliceblue;
+        }
+        .project-card {
+
+            background-color: #c2b9b9;
+            color: #1a1919;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            transition: box-shadow 0.3s ease-in-out;
+        }
+        .project-card:hover {
+            box-shadow: 0 0 15px rgb(169, 30, 109);
+        }
+        .contacts {
+
+            max-width: 500px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 1px;
+        }
+        input,
+        textarea {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        button.btn {
+            background: #00bcd4;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        button.btn:hover {
+            background: #4493bb;
+        }
+        h2{
+            text-align: center;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">MY PORTFOLIO</h1>
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="home">
+        <div class="homes">
+            <h1> PRABHA S</h1><br>
+            <h4>Full Stack Developer</h4><br>
+            <h5>To start my career as a Full Stack Python Developer, using my coding skills</h5><br> <br>
+        </div>
+        <div id="image">
+            <img src="/1758434496434.jpg" alt="image" height="250px" width="200px">
+        </div>
+    </section>
+    <section id="about">
+            <h2>ABOUT ME</h2>
+        <div class="about">
+            <h3> I recently completed my BCA degree from Madurai Kamaraj University College <br>and have also finished a
+                Full
+                Stack Development course at Eleysium Academy, Madurai.<br>
+                I have skills in HTML, CSS, JavaScript, Python, and modern frameworks for building responsive and
+                user-friendly web applications.</h3><br>
+        </div>
+    </section>
+    <section id="skills">
+        <div class="skill">
+                <h2>SKILLS</h2>
+            <ul>
+                <li class="btn btn-info">HTML</li><br><br>
+                <li class="btn btn-danger">CSS</li><br><br>
+                <li class="btn btn-warning">JavaScript</li><br><br>
+                <li class="btn btn-primary">Mongodb</li><br><br>
+                <li class="btn btn-success">Python</li><br><br>
+                <li class="btn btn-info">Django</li><br><br>
+            </ul>
+        </div>
+    </section>
+    <section id="project">
+            <h2 > MY PROJECTS</h2>
+        <div class="projects">
+            <div class="project-card">
+                <h3>Project One</h3>
+                <p>Responsive Portfolio Website-Designed and developed a personal portfolio site using HTML, CSS,
+                    JavaScript to showcase projects and skills..</p>
+            </div> <br>
+            <div class="project-card">
+                <h3>Project Two</h3>
+                <p>Creation of website using django and with database.</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+
+            <h2>CONTACT ME</h2>
+        <form class="contacts">
+            <input type="text" placeholder="Your Name" required><br>
+            <input type="email" placeholder="Your Email" required><br>
+            <textarea rows="5" placeholder="Your Message"></textarea><br>
+            <button type="submit" class="btn">Send Message</button><br>
+        </form>
+    </section>
+</body>
+</html>
